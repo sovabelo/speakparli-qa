@@ -1,0 +1,25 @@
+TC-004 — Server username format and uniqueness
+Original execution: 2026-11-02. Real Django Client, CSRF enforced, no AJAX, separate free usernames except the occupied-name control.
+Rules: A=reject non-Latin start; B=reject adjacent/trailing separators; C=accept a single internal separator to verification; D=reject occupied username.
+
+ID | Synthetic username | Expected rule | HTTP | Pending before rollback | Verdict
+01 | 1qa_5cb441c9d9d8 | A | 200 | 0 | PASS
+02 | яqa_5cb441c9d9d8 | A | 200 | 0 | PASS
+03 | qa__5cb441c9d9d8 | B | 200 | 0 | PASS
+04 | qa_.5cb441c9d9d8 | B | 200 | 0 | PASS
+05 | qa_-5cb441c9d9d8 | B | 200 | 0 | PASS
+06 | qa._5cb441c9d9d8 | B | 200 | 0 | PASS
+07 | qa..5cb441c9d9d8 | B | 200 | 0 | PASS
+08 | qa.-5cb441c9d9d8 | B | 200 | 0 | PASS
+09 | qa-_5cb441c9d9d8 | B | 200 | 0 | PASS
+10 | qa-.5cb441c9d9d8 | B | 200 | 0 | PASS
+11 | qa--5cb441c9d9d8 | B | 200 | 0 | PASS
+12 | qa_5cb441c9d9d8_ | B | 200 | 0 | PASS
+13 | qa_5cb441c9d9d8. | B | 200 | 0 | PASS
+14 | qa_5cb441c9d9d8- | B | 200 | 0 | PASS
+15 | qa_5cb441c9d9d8 | C | 302 | 1 | PASS
+16 | qa.5cb441c9d9d8 | C | 302 | 1 | PASS
+17 | qa-5cb441c9d9d8 | C | 302 | 1 | PASS
+18 | qa_registration_001 | D | 200 | 0 | PASS
+
+18 PASS, 0 FAIL, 0 BLOCKED. No active accounts created. Three accepted pending records were observed and rolled back; three test emails remained in Mailpit. Normal quotas were consumed and not reset. This does not prove browser behavior, durable pending persistence or completion of registration. Publication adaptation; private implementation details omitted.

@@ -1,0 +1,12 @@
+BUG-002 — Limited read-only retest
+Current verification status: Partially verified — browser retest pending.
+Original date: 2026-11-02. Isolated local QA. Five HTTPS GETs, including no-cache refresh requests; no authentication POSTs and no manual counter changes.
+Before / After:
+Failure count: 5 / 5.
+Restriction end: unchanged absolute expiry.
+Remaining lifetime: decreased by 525 ms during the observation interval.
+HTTP: 429 on all five GETs, expected while restricted.
+Result: PASS for GET not increasing attempts or extending restriction.
+Browser POST replay/refresh behavior: INCONCLUSIVE in this diagnostic; not exercised.
+Historical tester decision: closed after reviewing the diagnostic. This decision is preserved, but is not upgraded to a fully verified browser fix. The screenshot named fixed still shows an active restriction; it is not proof of an error-free sign-in.
+Publication adaptation: internal cache coordinates, implementation keys and exact timestamps omitted.

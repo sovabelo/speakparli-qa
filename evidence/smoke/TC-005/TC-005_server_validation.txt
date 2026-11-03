@@ -1,0 +1,21 @@
+TC-005 — Server email validation
+Original execution: 2026-11-02. 8 PASS / 0 FAIL / 2 BLOCKED.
+Real Django views/forms/model validators; CSRF-enforced client; free unique username per scenario. No production access.
+
+ID | Input | Expected | Actual | HTTP | Pending created | Verdict
+01 | qa.email.valid@example.com | Accept | Already occupied; positive acceptance blocked | 200 with email error | 0 | BLOCKED
+02 | qa.email.example.com | Reject | Rejected: invalid format | 200 with email error | 0 | PASS
+03 | qa.email@ | Reject | Rejected: missing domain | 200 with email error | 0 | PASS
+04 | @example.com | Reject | Rejected: missing local part | 200 with email error | 0 | PASS
+05 | qa test@example.com | Reject | Rejected: internal space | 200 with email error | 0 | PASS
+06 | qa.email.valid@example.com | Reject | Rejected: existing email | 200 with email error | 0 | PASS
+07 | QA.EMAIL.VALID@example.com | Reject | Rejected: case-insensitive duplicate | 200 with email error | 0 | PASS
+08 | qa.email+test@example.com | Accept | Already occupied; fresh acceptance and stored plus tag blocked | 200 with email error | 0 | BLOCKED
+09 | QA.EMAIL+TEST@example.com | Reject | Rejected: case-insensitive plus-address duplicate | 200 with email error | 0 | PASS
+10 | Regional-policy form investigation | Investigate existing regional rule | Implementation confirmed with real forms; business requirement and live regional branch not established | N/A (form) | 0 | PASS
+
+The exact positive email inputs already belonged to QA accounts; existing accounts and quotas were not reset. Direct model-field/form controls accepted syntax and retained the plus tag in cleaned data, but fresh pending/user persistence was not proved in cases 01/08. SQL uniqueness also rejected case variants. User records were 3 before/after; pending 0 before/after; complete row snapshots matched. Mailpit message count stayed 14. No mail sent.
+Regional policy exists in implementation and the original checklist; independent approved business requirements were not established. The live local fixture used a fixed non-RU country. The regional check was a direct-form investigation, not an HTTP regional-flow test.
+No confirmed registration defect found in executed scenarios. Model validation outside forms and database collation portability were noted as potential implementation risks, not reproduced signup failures. Internal source details are omitted from this public copy. TC-005 server execution remains incomplete because two positive cases are blocked. Earlier manual success screenshots are separate evidence and do not retroactively turn these outcomes into PASS.
+
+Pending rerun: use new unique synthetic test emails and independent usernames for cases 01/08. Keep both BLOCKED until the new server execution is recorded.

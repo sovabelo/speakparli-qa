@@ -1,0 +1,221 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "evidence/smoke/BUG-001/BUG-001_onboarding_localization_fixed-sanitized.png",
+      "sha256": "b2614d76ec4f2df1bb6d76b6955cd1198f27ef7750901baa194bb2081bebe7ec"
+    },
+    {
+      "path": "evidence/smoke/BUG-001/BUG-001_onboarding_mixed_localization_ru-sanitized.png",
+      "sha256": "bbe13726eb701f7a3bf1cc5a613b3e05f925f6b183004236e094f96387a0c151"
+    },
+    {
+      "path": "evidence/smoke/BUG-002/BUG-002_login_error_after_hard_refresh-sanitized.png",
+      "sha256": "825e742f3d6d5c5d213b4b870dd48488b1531cf6c5496280b587f930d93de299"
+    },
+    {
+      "path": "evidence/smoke/BUG-002/BUG-002_login_error_after_refresh_fixed-sanitized.png",
+      "sha256": "298fa40cc8c7e998f731e1e4d08d30ccb27ac6f27839b9be2d47c51682ad2413"
+    },
+    {
+      "path": "evidence/smoke/BUG-002/BUG-002_redis_get_retest.txt",
+      "sha256": "48ce700580f0025d04fe97cbcb128f2a9cdbbcfc91dac5ba5a14ee014b84e00d"
+    },
+    {
+      "path": "evidence/smoke/BUG-003/BUG-003_registration_error_localized_RU_AFTER-sanitized.png",
+      "sha256": "c1dcacf21e92ecdacf7cc600ad91a9ff886d5167648e0f6786af2744e12b6004"
+    },
+    {
+      "path": "evidence/smoke/BUG-003/BUG-003_registration_error_not_localized_RU-sanitized.png",
+      "sha256": "3f9f9d9935040a30cee974f346f93b829767b0041bdd37e98bb3a251d42b7f63"
+    },
+    {
+      "path": "evidence/smoke/TC-001/SMK-001_signup_page-sanitized.png",
+      "sha256": "6252d4309d6fe32034f666ab176e1c926ed2ef5d41bb047a3bd4a543fda90842"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_01_consent_unchecked-sanitized.png",
+      "sha256": "f1a0354dc030268c80f1976d7c7bf600d414cd5de248537678075489103f28c2"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_02_consent_checked-sanitized.png",
+      "sha256": "45c0b305e9a2cfa3678ce2987eb85b610056e728c010851a95526a0bba14a3be"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_04_turnstile_consent_unchecked-sanitized.png",
+      "sha256": "03b6d3591de578e68244b3b65301c064778106a13d0aabacbf290bce68a60c9c"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_05_turnstile_consent_checked-sanitized.png",
+      "sha256": "0a065fdd4e2beafc2abd9d09a89bcc82e9bef4a34012e66534ee83d02c0bee0a"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_06_submit_disabled-sanitized.png",
+      "sha256": "c72cee97b6fc79e862749dd9938491b0f359fa40c56088cdcff40e70bd7bfc97"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_07_submit_enabled-sanitized.png",
+      "sha256": "c983b345b25daa59cfa32d9e813f816d48f06338a49dbe3b4fd35a9ab6bda5a5"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_08_email_verification_page-sanitized.png",
+      "sha256": "47b8a3d62cf0f1a49613c353acc0f5b679a8c72db7d5ea3772070b4ee089f170"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_09_verification_email_mailpit-sanitized.png",
+      "sha256": "196c7bf4dad7139669db2c900319c509638289bc8d0a403b63414d7275515437"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_10_post_verification_onboarding-sanitized.png",
+      "sha256": "b2614d76ec4f2df1bb6d76b6955cd1198f27ef7750901baa194bb2081bebe7ec"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_11_login_form-sanitized.png",
+      "sha256": "31201efc59ee5a825403775c2c0333d53a4e9026e82e37fee561977d8854793a"
+    },
+    {
+      "path": "evidence/smoke/TC-001/TC-001_12_login_success-sanitized.png",
+      "sha256": "e49691f616e115a88ea32cc2dc295337244449081201bff9d676e6cb5561fa29"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_01_login_form-sanitized.png",
+      "sha256": "bfff9a8d57f878cd3f37f6e91c28d0c87ab5545c4ca67ca8b885c4300c78f72d"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_02_login_success-sanitized.png",
+      "sha256": "88c17c525b65d5046598e80b0cb32496b49ae1dbe41f902d9617be377d695a94"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_03_authenticated_profile-sanitized.png",
+      "sha256": "58f671c7ad1687f756e14f4b99202d7f9c247ae2cf8489871c8e7476bac54dc2"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_04_invalid_password_input-sanitized.png",
+      "sha256": "e1c74c331acf305913f6b5367ca7f5cda12220a5f9f787884c9243c54de38ea2"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_05_invalid_password_error-sanitized.png",
+      "sha256": "8748c55e8ca3d4361ea84e42f938fb6b8736999c7985e72454aee5f2ad3408bc"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_06_nonexistent_user_input-sanitized.png",
+      "sha256": "ac7fd0a711d98d8a1401ac03acf790889ef2443c822636a6f40a09c9b6f6903c"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_07_nonexistent_user_error-sanitized.png",
+      "sha256": "825e742f3d6d5c5d213b4b870dd48488b1531cf6c5496280b587f930d93de299"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_08_login_rate_limit-sanitized.png",
+      "sha256": "298fa40cc8c7e998f731e1e4d08d30ccb27ac6f27839b9be2d47c51682ad2413"
+    },
+    {
+      "path": "evidence/smoke/TC-002/TC-002_09_login_success_after_rate_limit-sanitized.png",
+      "sha256": "355587ccc39c787efe032e4ae484ad6250b1bf1b21e628745cfc10379a9fd78e"
+    },
+    {
+      "path": "evidence/smoke/TC-003/TC-003_01_username_2_rejected-sanitized.png",
+      "sha256": "9640823155985afee23e7916270ead8146bd1e91e62782e2c88bfb63e67fca60"
+    },
+    {
+      "path": "evidence/smoke/TC-003/TC-003_02_username_3_accepted-sanitized.png",
+      "sha256": "bab95e2f4bcbbb2a0bb85f246bbb71cf75246be5bd75b0380cf00fd337c16c94"
+    },
+    {
+      "path": "evidence/smoke/TC-003/TC-003_03_username_51_maxlength_enforced-sanitized.png",
+      "sha256": "96eb791f72db9bf2c963eb55299dee73add560a9585f98ab1001eea1e245ecb4"
+    },
+    {
+      "path": "evidence/smoke/TC-003/TC-003_server_validation.txt",
+      "sha256": "95bc3b288fb8e02bab83a3830d4684114b273020708899623441ff0ba3ce266e"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_01_latin_valid-sanitized.png",
+      "sha256": "e5cefe5c21cb6c37d98827b41770e05423f0a869dbaf125ec4672c74d8ff26bb"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_02_digit_prefix_rejected-sanitized.png",
+      "sha256": "8dde34ac44696e87dffbc80fb43f52a6a93ba40cbd6bc19165faf1d9d7797205"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_03_cyrillic_prefix_rejected-sanitized.png",
+      "sha256": "6541980109e8485ad2bec434c6696a47447b03c42169161555ee209f0ff9669a"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_04_dot_separator_accepted-sanitized.png",
+      "sha256": "3cccbfd5813e7c87deec19bbf30cd1cf3c1901aab4cb93cc0b409cfcc4e75266"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_05_hyphen_separator_accepted-sanitized.png",
+      "sha256": "6b5550bb7a4d9c022424e2c8b4563fd29e6b90678b83452357869e9cada46d2a"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_06_trailing_separator_rejected-sanitized.png",
+      "sha256": "6e6c9e075696fc1ef00fa983d4aa4f74d8e3b878c6bd2b4b8cf2e48530e67fd0"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_07_double_separator_rejected-sanitized.png",
+      "sha256": "7fcab8ad160cdce3f215f60e76b9f20b2f847bf4295596695dfc14404e7c3a1f"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_08_existing_username_rejected-sanitized.png",
+      "sha256": "72673f1eac9d09a2001f3f39812a2e13a0716b9d912456c8f5ca598b70dfa798"
+    },
+    {
+      "path": "evidence/smoke/TC-004/TC-004_server_validation.txt",
+      "sha256": "76adbb829236f5e51a52991558fa08832453cfcc3923b0037205e370ce3fbf11"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_01_valid_email_registration-sanitized.png",
+      "sha256": "019a07208ff7fe21b81fb58dd1e9f05769f1d525ab719551a7fa6a311ef75411"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_02_email_verification-sanitized.png",
+      "sha256": "0427b7701ea20b8c69f134c133cf6021a02e3d720d824f5794021ac1303062a6"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_03_registration_success-sanitized.png",
+      "sha256": "a1e5c14e7b01ccabeaaf619cae8115499df6d37206f83ac79a2fa868acd07f31"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_04_invalid_email_missing_at-sanitized.png",
+      "sha256": "0d04df862dd62e3069a92a48f4d727a7eedc327482dd7b7ab92e93a2659942d3"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_05_invalid_email_missing_domain-sanitized.png",
+      "sha256": "9346e35e7523d248c2705f37fbd986d631b1ee933cfaedd680b9454b074cb443"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_06_invalid_email_missing_local_part-sanitized.png",
+      "sha256": "47ec5fcf82adb0120a458b606d1c83eeca30873156b75e4216b4a8683213ff6f"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_07_invalid_email_with_space-sanitized.png",
+      "sha256": "7168c945e4337977d61edc994126569037250798b26b7e854101939764a13893"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_08_duplicate_email_rejected-sanitized.png",
+      "sha256": "3f9f9d9935040a30cee974f346f93b829767b0041bdd37e98bb3a251d42b7f63"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_09_email_case_variant_rejected-sanitized.png",
+      "sha256": "e7e0f0f767e121208cfffa44537fdfb02feed358f5f1217bc8272cb3ac605ee4"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_10_plus_addressing_accepted-sanitized.png",
+      "sha256": "4123e31fb04cd187384de6c0d968346bd7745ab91596bb27f9dc401834076fc1"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_11_plus_addressing_mailpit-sanitized.png",
+      "sha256": "7033f6249271652a591ffbce0477ebca5519c8d8ce93237dad4f34b86504ac4d"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_12_plus_addressing_profile-sanitized.png",
+      "sha256": "6c82d6941bbdd0e29ea435fb5d3ebabfc77ba67a27cc363419811d2f29c65944"
+    },
+    {
+      "path": "evidence/smoke/TC-005/TC-005_server_validation.txt",
+      "sha256": "28c622f21be226b6026c5298c0ab5b9fe607cdeb1e6fd29409a0a052d37728c8"
+    }
+  ]
+}

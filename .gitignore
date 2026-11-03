@@ -1,0 +1,19 @@
+# Only curated documents, workbook and sanitized evidence belong here.
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.log
+__pycache__/
+.env*
+.private/
+*.sqlite*
+*.sql
+*.pem
+*.key
+*.pfx
+*.har
+node_modules/
+.venv/
+outputs/

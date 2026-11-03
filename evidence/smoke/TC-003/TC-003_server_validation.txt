@@ -1,0 +1,9 @@
+TC-003 — Server username length validation
+Original execution: 2026-11-02. Method: real Django Client with CSRF enforcement in isolated local_qa; no browser JS.
+Length | Expected | Actual | HTTP | Pending before rollback | Verdict
+2 | Reject | Username length error | 200 | 0 | PASS
+3 | Accept to email verification | Redirect and verification page | 302 then 200 | 1 | PASS
+50 | Accept to email verification | Redirect and verification page | 302 then 200 | 1 | PASS
+51 | Reject | Username length error | 200 | 0 | PASS
+All four used independent synthetic data. No active account was created; accepted pending records were observed inside transactions and rolled back. Two captured test emails remained in Mailpit; normal quotas were not reset. secure=True is an in-process HTTPS context, not a TLS handshake. No registration completion, persistence-after-rollback or other username rules are proved by this report.
+Publication adaptation: original verdicts preserved; internal details omitted.
